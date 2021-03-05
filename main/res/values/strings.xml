@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Modroid</string>
+    <string name="test">test</string>
+
+    <string-array name="spinnerQuestionSecret">
+        <item>Quelle est ta couleur preferée ?</item>
+        <item>Quel est ton nom ?</item>
+        <item>Quelle est ta date de naissance ?</item>
+    </string-array>
+
+    <string-array name="motsSixLettres">
+        <item>soluce</item>
+        <item>poison</item>
+        <item>ironie</item>
+        <item>soleil</item>
+    </string-array>
+
+
+</resources>

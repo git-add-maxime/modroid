@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Inscription"
+    android:background="@color/couleurFond">
+
+    <EditText
+        android:id="@+id/editTextPseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Pseudo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextMotdepasse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextMotdepasseC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmez votre mot de passe"
+        android:inputType="textPassword" />
+
+    <Spinner
+        android:id="@+id/spinnerQuestionSecret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/editTextQuestionSecret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Votre reponse secrète "
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexe :" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSexehomme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homme"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSexefemme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femme"
+            android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validation"
+        android:onClick="onValidation"/>
+
+    <Button
+        android:id="@+id/buttonReturnConnexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retour à la connexion"
+        android:onClick="onConnexion"/>
+</LinearLayout>

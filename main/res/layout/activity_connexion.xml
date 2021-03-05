@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Connexion"
+    android:background="@color/couleurFond">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="307dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="262dp"
+            android:layout_weight="1"
+            android:contentDescription="logo"
+            app:srcCompat="@drawable/modroid_logo"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextPseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:hint="Pseudo" />
+
+    <EditText
+        android:id="@+id/editTextMotdepasse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="false"
+        android:hint="Mot de passe" />
+
+    <Button
+        android:id="@+id/buttonConnexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:onClick="onConnexion"/>
+
+    <Space
+        android:layout_width="54dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonInscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onInscription"
+            android:text="Inscrivez-vous" />
+
+        <Space
+            android:layout_width="42dp"
+            android:layout_height="21dp" />
+
+        <Button
+            android:id="@+id/buttonMotdepasseoublie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onMdpo"
+            android:text="Mot de passe oublié ?" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onScore"
+        android:text="Scores" />
+
+</LinearLayout>
